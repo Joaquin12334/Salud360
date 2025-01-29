@@ -131,9 +131,12 @@
     border: none;
     cursor:pointer;
     font-weight: bold;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.3s ease;
     text-align: center;
     vertical-align: middle;
+    position: relative; /* Necesario para posicionar ::after */
+    width: fit-content; /* Ajusta el botón al contenido */
+    padding: 1rem 2rem; /* Controla el tamaño del botón */
   }
   
   .hero form button:hover {
@@ -161,7 +164,7 @@
     font-size: 16px;
     font-weight: bold;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: background-color 0.3s ease;
   }
 
   /* Mostrar texto al presionar */
