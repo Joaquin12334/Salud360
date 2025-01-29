@@ -140,14 +140,14 @@
     background-color: #1C8C8C;
   }
 
-  button:active {
-    background-color: #28a745; /* Verde */
+  .hero form button:active {
+    background-color: #F51E92; 
     color: white;
   }
 
   /* Cambiar texto momentáneamente */
-  button::after {
-    content: "¡Cambiando!";
+  .hero form button::after {
+    content: "CARTILLA ENVIADA";
     position: absolute;
     top: 0;
     left: 0;
@@ -156,8 +156,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.8);
-    color: #28a745;
+    background: rgba(255, 255, 255, 20);
+    color: #F51E92;
     font-size: 16px;
     font-weight: bold;
     opacity: 0;
@@ -165,7 +165,7 @@
   }
 
   /* Mostrar texto al presionar */
-  button:active::after {
+  .hero form button:active::after {
     opacity: 1;
   }
 
