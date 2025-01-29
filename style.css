@@ -109,7 +109,6 @@
     max-width: 750px;    
   }
   
-  .hero form input,
   .buttonact {
     padding: 1.5rem 2rem;
     border: 1px solid #ccc;
@@ -122,7 +121,7 @@
     margin-top: 2rem;
   }
   
-  .buttonact {
+  .buttonact button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,17 +138,17 @@
     padding: 1rem 2rem; /* Controla el tamaño del botón */
   }
   
-  .buttonact:hover {
+  .buttonact button:hover {
     background-color: #1C8C8C;
   }
 
-  .buttonact:active {
+  .buttonact button:active {
     background-color: #F51E92; 
     color: white;
   }
 
   /* Cambiar texto momentáneamente */
-  .buttonact::after {
+  .buttonact button::after {
     content: "CARTILLA ENVIADA";
     position: absolute;
     top: 0;
