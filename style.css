@@ -133,7 +133,7 @@
     border: none;
     cursor:pointer;
     font-weight: bold;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.3s ease;
     text-align: center;
     vertical-align: middle;
   }
@@ -195,7 +195,7 @@
   }
   
   /* Mostrar el nuevo texto cuando el botón es presionado */
-  .buttonact button:active::after {
+  .buttonact button:focus::after {
     opacity: 1;
     animation: showText 3s ease forwards;
   }
