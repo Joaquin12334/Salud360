@@ -108,67 +108,81 @@
     width: auto;
     max-width: 750px;    
   }
+
+  .hero form button {
+    padding: 1.5rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 60px;
+    font-size: 1.5rem;
+    width: auto;
+    min-width: 150px;
+    margin-top: 2rem;
+  }
   
-.buttonact {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  position: relative;
-}
+  .buttonact {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+  }
+  
+  .buttonact button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #26AEAE;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    position: relative;
+    min-width: 150px;
+  }
+  
+  /* Cambio de color al pasar el mouse */
+  .buttonact button:hover {
+    background-color: #1C8C8C;
+  }
+  
+  /* Efecto de presionar */
+  .buttonact button:active {
+    background-color: #F51E92;
+    color: white;
+  }
+  
+  /* Crear el texto alternativo con ::after */
+  .buttonact button::after {
+    content: "CARTILLA ENVIADA";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F51E92;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Mostrar el nuevo texto cuando el botón es presionado */
+  .buttonact button:active::after {
+    opacity: 1;
+    animation: showText 3s ease forwards;
+  }
 
-.buttonact button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #26AEAE;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  text-align: center;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  font-size: 1rem;
-  position: relative;
-  min-width: 150px;
-}
-
-/* Cambio de color al pasar el mouse */
-.buttonact button:hover {
-  background-color: #1C8C8C;
-}
-
-/* Efecto de presionar */
-.buttonact button:active {
-  background-color: #F51E92;
-  color: white;
-}
-
-/* Crear el texto alternativo con ::after */
-.buttonact button::after {
-  content: "CARTILLA ENVIADA";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #F51E92;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Mostrar el nuevo texto cuando el botón es presionado */
-.buttonact button:active::after {
-  opacity: 1;
-}
   .como-funciona {
     display: flex;
     justify-content: center;
