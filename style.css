@@ -535,9 +535,10 @@
     display: flex;
     width: 23.5vh;
     height: 20vh;
-    margin-left: 95vh;
     margin-top: 7vh;
     margin-bottom: 3.5vh;
+    margin-left: 44.5vw;
+    margin-right: 45vw;
   }
 
   .info-text {
